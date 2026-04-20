@@ -1,0 +1,198 @@
+/* ===== BASE ===== */
+html {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0f;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===== GLOBAL ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ===== FONT ===== */
+.font-title {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ===== SCROLL ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6d28d9;
+  border-radius: 10px;
+}
+
+/* ===== ANIMATION ===== */
+.animate-fade-in {
+  animation: fade-in 0.4s ease;
+}
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+/* ===== INPUT ===== */
+.input-love {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+}
+
+.input-love:focus {
+  outline: none;
+  border-color: #ec4899;
+}
+
+/* ===== CHART ===== */
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.chart-wrapper svg {
+  width: 100% !important;
+  max-width: 650px;
+  height: auto !important;
+}
+
+/* ===== CARD ===== */
+.chart-card-blue,
+.chart-card-pink {
+  background: #0d0d16;
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.25s;
+}
+
+.chart-card-blue:hover,
+.chart-card-pink:hover {
+  transform: translateY(-3px);
+}
+
+/* ===== TITLE ===== */
+.chart-title-blue,
+.chart-title-pink {
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.chart-title-blue { color: #60a5fa; }
+.chart-title-pink { color: #f472b6; }
+
+/* ===== EMPTY ===== */
+.chart-empty {
+  text-align: center;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+/* ===== TEXT AI (CLEAN) ===== */
+.pro-text {
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: #e2e8f0;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* đoạn */
+.pro-text p {
+  margin-bottom: 14px;
+}
+
+/* list */
+.pro-text ul {
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.pro-text li {
+  margin-bottom: 6px;
+}
+
+/* highlight */
+.pro-text strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ===== RESULT BOX ===== */
+.result-card {
+  background: #0a0a14;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 18px;
+}
+
+/* ===== PROGRESS ===== */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #1f2937;
+  border-radius: 999px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ec4899, #ef4444);
+  transition: width 0.5s ease;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .pro-text {
+    font-size: 14.5px;
+  }
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* 🔥 HIỆN SCROLLBAR CHO CÁC VÙNG CẦN THIẾT */
+.custom-scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(109, 40, 217, 0.5);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 92, 246, 0.8);
+}
+/* 🔥 ẨN SCROLLBAR */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  scrollbar-width: none; /* Firefox */
+}
